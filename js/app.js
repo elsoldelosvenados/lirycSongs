@@ -3,7 +3,7 @@ import * as UI  from './interface.js'
 
 /**
   * @descrition As soon as the main button is clicked this callback
-  * will initialize the flow first it will validate de form and 
+  * will initialize the flow first it will validate de form and
   * it will show the respective message then if all is well
   * it will print the resultado
 */
@@ -28,13 +28,14 @@ UI.searchForm.addEventListener('submit', (e)=>{
                     if(data.response.lyrics){
                           UI.divResponse.textContent = data.response.lyrics
                     } else {
-                          UI.divMessage.innerHTML = "The soung don't exist, please try again"
-                          UI.divMessage.classList.add('error')
+                          UI.divErrorResult.innerHTML = "The song don't exist, please try again"
+                          UI.divErrorResult.classList.add('error')
                           setTimeout(()=>{
-                                UI.divMessage.innerHTML = ''
-                                UI.divMessage.classList.remove('error')
+                                UI.divErrorResult.innerHTML = ''
+                                UI.divErrorResult.classList.remove('error')
+
                                 UI.searchForm.reset()
-                          },3000)
+                          },4000)
 
                     }
               })
