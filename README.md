@@ -28,4 +28,4 @@ External software intallation is not neccesary only needs a browser to run.
 On the project it was used the technology below
 `JavaScript`,`CSS` and `HTML`
 ___
-The project is available [here](https://andrewakosta.github.io/mapsAPI)
+The project is available [here](https://andrewakosta.github.io/lirycSongs/)
